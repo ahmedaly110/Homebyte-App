@@ -1,0 +1,267 @@
+.picZoomer {
+    position: relative;
+    pointer-events: none;
+
+}
+.picZoomer-pic-wp {
+    position: relative;
+}
+.picZoomer-pic {
+    max-width: 100%;
+}
+.picZoomer-cursor {
+    position: absolute;
+    display: none;
+    width: 50px; /* Adjust cursor size as needed */
+    height: 50px; /* Adjust cursor size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Cursor background color */
+    border-radius: 50%;
+}
+
+.picZoomer-zoom-pic {
+    max-width: none;
+    position: absolute;
+}
+
+
+.picZoomer-zoom-wp {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    height: 460px;
+    margin-top: -19px;
+}
+
+.picZoomer-cursor {
+    display: none;
+    cursor: crosshair;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.picZoomCursor-ico {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.my_img {
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+}
+
+.piclist li {
+    display: inline-block;
+    width: 90px;
+    height: 114px;
+}
+
+.piclist li img {
+    width: 97%;
+    height: auto;
+}
+
+section {
+    padding: 60px 10px;
+}
+
+.row-sm .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*===pic-Zoom===*/
+._boxzoom .zoom-thumb {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0px;
+}
+
+._boxzoom .zoom-thumb ul.piclist {
+    padding-left: 0px;
+    top: 0px;
+}
+
+._boxzoom ._product-images {
+    width: 80%;
+    display: inline-block;
+}
+
+._boxzoom ._product-images .picZoomer {
+    width: 100%;
+}
+
+._boxzoom ._product-images .picZoomer .picZoomer-pic-wp img {
+    left: 0px;
+}
+
+._boxzoom ._product-images .picZoomer img.my_img {
+    width: 100%;
+}
+
+.piclist li img {
+    height: 100px;
+    object-fit: cover;
+}
+
+/*======products-details=====*/
+._product-detail-content {
+    background: transparent;
+    padding: 15px;
+}
+
+._product-detail-content p._p-name {
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+}
+
+.p-list span {
+    margin-right: 15px;
+}
+
+.p-list span.price {
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+._p-qty input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #0a0a0a;
+    border-bottom: 1px solid #0c0c0c;
+    margin: 0px;
+    width: 50px;
+    height: 35px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+._p-add-cart {
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.p-list {
+    margin-bottom: 10px;
+}
+
+._p-features > span {
+    display: block;
+    font-size: 16px;
+    color: #565656;
+    margin-bottom: 5px;
+}
+
+._p-features > span > i {
+    margin-right: 5px;
+    color: #777;
+}
+
+._p-features > span > i.fa-check-circle {
+    color: #A88158;
+}
+
+/* Checkout button */
+._btn {
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background: #A88158;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background: #A88158;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Sticky Add to Cart Button */
+._p-add-cart-sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    ._product-detail-content {
+        padding: 0px;
+    }
+
+    .zoom-thumb {
+        width: 90px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0px;
+    }
+
+    ._product-images {
+        width: 80%;
+        display: inline-block;
+    }
+
+    .zoom-thumb ul.piclist {
+        padding-left: 0px;
+        top: 0px;
+    }
+
+    ._boxzoom .zoom-thumb {
+        width: 100px;
+    }
+
+    .zoom-thumb ul.piclist img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ._product-images .picZoomer img.my_img {
+        width: 100%;
+    }
+
+    .piclist li img {
+        height: 100px;
+        object-fit: cover;
+    }
+}
